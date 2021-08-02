@@ -1,5 +1,5 @@
 .grid-square {
-    background-color: #f4f4f4;
+    background-color: white;
     margin: 0;
     padding: 0;
     border-style: solid;
@@ -7,13 +7,24 @@
     border-width: 1px;
 }
 
+#title {
+    text-align: center;
+}
+
+#settings {
+    margin: auto;
+    width: 51.2vh;
+    text-align: center;
+    padding: 2vh; 
+}
+
 #container {
     background-color: grey;
-    /* width: 75%;
-    text-align: center; */
     display: grid;
-    grid-template-columns: repeat(16, 2vmax);
-    grid-template-rows: repeat(16, 2vmax);
-    height: 32vh;
-    width: 32vh;
+    grid-template-columns: repeat(16, auto);
+    grid-template-rows: repeat(16, auto);
+    height: 51.2vh;
+    width: 51.2vh;
+    margin: auto; 
 }
+
