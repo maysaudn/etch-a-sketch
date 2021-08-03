@@ -10,9 +10,16 @@ for (let i = 0; i < 256; i++) {
 
 //create a function that changes a div's color
 
+
 function changeColor(e) { 
-    e.target.style.backgroundColor = 'black';
-    console.log('hover');
+
+    if (gayMode === false) {
+        e.target.style.backgroundColor = 'black';
+        console.log('hover');
+    } else {
+        e.target.style.backgroundColor = 'rgb(' + Math.random() * 255 + ',' + Math.random() * 255 + ',' + Math.random() * 255 + ')';
+        console.log('hover');
+    }
 }
 
 // Make it so the clear grid button clears the grid
@@ -61,3 +68,20 @@ function setNewGrid() {
     container.style.gridTemplateColumns = 'repeat(' + newGrid + ', auto)';
     container.style.gridTemplateRows = 'repeat(' + newGrid + ', auto)';
 }
+
+// add gayMode
+
+let gayMode = false;
+
+function activateGayMode() {
+    if (gayMode === false) {
+        gayMode = true;
+        gayModeButton.textContent = 'gay mode activated';
+    } else {
+        gayMode = false;
+        gayModeButton.textContent = 'GAY MODE';
+    }
+}
+
+gayModeButton = document.getElementById('gay-mode-button');
+gayModeButton.addEventListener('click', activateGayMode)
