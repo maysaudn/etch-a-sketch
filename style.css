@@ -1,3 +1,7 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .grid-square {
     background-color: white;
     margin: 0;
@@ -9,13 +13,21 @@
 
 #title {
     text-align: center;
+    font-family: 'Tourney', cursive;
+    font-size: 62px;
+}
+
+#description {
+    text-align: center;
+    font-size: 24px;
 }
 
 #settings {
     margin: auto;
-    width: 51.2vh;
+    width: 60vh;
     text-align: center;
-    padding: 2vh; 
+    padding-top: 1vh;
+    padding-bottom: 4vh; 
 }
 
 #container {
@@ -26,5 +38,23 @@
     height: 51.2vh;
     width: 51.2vh;
     margin: auto; 
+}
+
+.button {
+    background-color: lavender;
+    border: none; 
+    padding: 12px 25px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.button:hover {
+    background-color: purple;
+    color: white;
+}
+
+#gay-mode-button {
+    background-image: linear-gradient(to right,blue,indigo,violet);
+    color: white;
 }
 
